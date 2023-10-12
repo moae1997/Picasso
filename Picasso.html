@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picasso</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <header>
+        <h1>The Sliding Door</h1>
+        <p>Fill out the form bellow for a copy</p>
+    </header>
+    <main>
+        <section class="the-art">
+            <div class="sale">Sale</div>
+            <div class="curtmet">
+                <div class="curcirc"></div>
+                <div class="curmet"></div>
+                <div class="curcirc"></div>
+            </div>
+            <div class="frame">
+                <div class="cur">
+                    <div class="curfold"></div>
+                    <div class="curfold"></div>
+                    <div class="curfold"></div>
+                    <div class="curfold"></div>
+                </div>
+                <div class="door" style="border-left: 10px solid whitesmoke;">
+                    <div class="doorslid"></div>
+                </div>
+                <div class="door" style="border-right: 10px solid whitesmoke;">
+                    <div id="slide" class="doorslid">
+                    </div>
+                </div>
+                <div class="cur">
+                    <div class="curfold"></div>
+                    <div class="curfold"></div>
+                    <div class="curfold"></div>
+                    <div class="curfold"></div>
+                </div>
+            </div>
+        </section>
+        <section class="subform">
+            <form action="thankyou.html">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <p>Payment Method</p>
+                <label><input type="radio" name="pay" value="cashapp"> CashApp</label>
+                <label><input type="radio" name="pay" value="zelle"> Zelle</label>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>There is only one truth, it only takes a little research on your end</p>
+    </footer>
+</body>
+</html>

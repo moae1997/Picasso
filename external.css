@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+    font-family: 'Mooli', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.the-art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15vh;
+}
+
+.sale {
+    position: relative;
+    top: 1vh;
+    left: 25vw;
+    background-color: red;
+    border-radius: 50%;
+    padding: 1vh;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+.curtmet {
+    height: 1.5vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1vw 1fr 1vw;
+}
+
+.curcirc {
+    border-radius: 50%;
+    background-color: rgb(183,163,136);
+    box-shadow: 1px 1px 1px rgb(183,163,136);
+}
+
+.curmet {
+    border-radius: 10%;
+    background-color: rgb(183,163,136);
+    box-shadow: 1px 1px 1px rgb(183,163,136);
+}
+
+.frame {
+    height: 50vh;
+    width: 45vw;
+    box-shadow: 2px 2px 2px rgb(183,163,136);
+    display: grid;
+    grid-template-columns: 10vw 1fr 1fr 10vw;
+    background-image: url("https://cdn.pixabay.com/photo/2020/12/14/15/44/man-5831234_1280.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cur {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.door {
+    border-top: 10px solid whitesmoke;
+}
+.doorslid {
+    background-color: rgba(183,163,136,0.7);
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+}
+.curfold {
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/17/22/59/background-1988391_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+}
+
+.subform {
+    margin: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+form:only-child {
+    width: 20vw;
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgb(183,163,136);
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+input:not([type="radio"]) {
+    margin-bottom: 5px;
+}
+
+input:not([type="radio"]):last-of-type {
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 3vh;
+}
+
+@media screen and (max-width: 600px)  {
+    .frame {
+        width: 70vw;
+        background-size: cover;
+    }
+    .curtmet {
+        width: 75vw;
+    }
+    form:only-child {
+        width: 50vw;
+    }
+    footer {
+        font-size: 1.7vh;
+    }
+    .sale {
+        left: 37vw;
+        transform: rotate(20deg);
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+    .frame {
+        width: 60vw;
+        background-size: cover;
+    }
+    .curtmet {
+        width: 65vw;
+    }
+    form:only-child {
+        width: 30vw;
+    }
+    footer {
+        font-size: 2vh;
+    }
+    .sale {
+        left: 32.5vw;
+        transform: rotate(20deg);
+    }
+}
+
+#slide {
+  position: relative;
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0%   { right:0px;}
+    25%  {right:100px;}
+    50%  {right:100px;}
+    75%  { right:0px;}
+    100% { right:0px;}
+  }
